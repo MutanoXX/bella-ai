@@ -1,24 +1,18 @@
 {
   "version": 2,
   "name": "api-captcha",
-  "builds": [
-    {
-      "src": "api.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api.js"
-    }
-  ],
   "functions": {
     "api.js": {
       "runtime": "nodejs18.x",
       "maxDuration": 30
     }
   },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api.js"
+    }
+  ],
   "env": {
     "NODE_ENV": "production"
   },
