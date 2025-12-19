@@ -2,14 +2,14 @@
   "version": 2,
   "name": "api-captcha",
   "functions": {
-    "api.js": {
+    "api/api.js": {
       "maxDuration": 30
     }
   },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "api.js"
+      "destination": "/api/api.js"
     }
   ],
   "env": {
